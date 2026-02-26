@@ -4,12 +4,12 @@
 
 ```text
 START
-end = 1
+end = No
 number1 = 0
 number2 = 0
 select = 0
 PRINT "welcome"
-WHILE end == 1 DO
+WHILE end == No DO
   Print "instruction"
   number1 = INPUT
   number2 = INPUT
