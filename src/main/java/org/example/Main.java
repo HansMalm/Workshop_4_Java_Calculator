@@ -5,7 +5,9 @@ import java.util.Scanner;
 public class Main {
     static void main() {
 
-        int number, firstNumber, secondNumber;
+        int newCalculation = 1;
+        int select;
+        double result, firstNumber, secondNumber;
         Scanner scanner = new Scanner(System.in);
         boolean end = false;
 
@@ -21,14 +23,28 @@ public class Main {
             System.out.println("Choose operation. input (1) addition, (2) subtraction," +
                     " (3) multiplication or (4) division ");
             System.out.print("operation: ");
-            number = scanner.nextInt();
+            select = scanner.nextInt();
 
+            switch (select) {
+                case 1:
+                    result = firstNumber + secondNumber;
+                    System.out.println(firstNumber + " + " + secondNumber + " = " + result );
+                case 2:
+                    result = firstNumber - secondNumber;
+                    System.out.println(firstNumber + " - " + secondNumber + " = " + result );
+                case 3:
+                    result = firstNumber * secondNumber;
+                    System.out.println(firstNumber + " * " + secondNumber + " = " + result );
+                case 4:
+                    result = firstNumber / secondNumber;
+                    System.out.println(firstNumber + " / " + secondNumber + " = " + result );
+            }
 
             System.out.println("input (1) to calculate a new number,");
             System.out.println("or input (2) to end.");
             System.out.print("input: ");
-            number = scanner.nextInt();
-            if (number == 0) {
+            newCalculation = scanner.nextInt();
+            if (newCalculation == 0) {
                 System.out.print("End.");
                 break;
             }

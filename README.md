@@ -4,23 +4,23 @@
 
 ```text
 START
-end = No
+newCalculation = 1
 number1 = 0
 number2 = 0
 select = 0
-PRINT "welcome"
-WHILE end == No DO
-  Print "instruction"
+PRINT "Welcome"
+WHILE newCalculation == 1 DO
+  Print "Instruction"
   number1 = INPUT
   number2 = INPUT
   select = INPUT
   SWITCH = select
-    case1 addition
-    case2 subtraction
-    case3 multiplication
-    case4 division
+    case1 PRINT addition result
+    case2 PRINT subtraction result
+    case3 PRINT multiplication result
+    case4 PRINT division result
   PRINT "new calculation?"
-  end = input
+  newCalculation = input
 END
 ```
 
