@@ -5,11 +5,10 @@ import java.util.Scanner;
 public class Main {
     static void main() {
 
-        int newCalculation = 1;
+        Scanner scanner = new Scanner(System.in);
+        int newCalculation;
         int select;
         double result, firstNumber, secondNumber;
-        Scanner scanner = new Scanner(System.in);
-        boolean end = false;
 
         System.out.println("Welcome to the Calculator!");
         while (true) {
@@ -40,8 +39,7 @@ public class Main {
                     System.out.println(firstNumber + " / " + secondNumber + " = " + result );
             }
 
-            System.out.println("input (1) to calculate a new number,");
-            System.out.println("or input (2) to end.");
+            System.out.println("Calculate a new number? input (1) Yes or (0) No");
             System.out.print("input: ");
             newCalculation = scanner.nextInt();
             if (newCalculation == 0) {
