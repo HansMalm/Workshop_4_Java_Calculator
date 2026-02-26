@@ -28,12 +28,15 @@ public class Main {
                 case 1:
                     result = firstNumber + secondNumber;
                     System.out.println(firstNumber + " + " + secondNumber + " = " + result );
+                    break;
                 case 2:
                     result = firstNumber - secondNumber;
                     System.out.println(firstNumber + " - " + secondNumber + " = " + result );
+                    break;
                 case 3:
                     result = firstNumber * secondNumber;
                     System.out.println(firstNumber + " * " + secondNumber + " = " + result );
+                    break;
                 case 4:
                     result = firstNumber / secondNumber;
                     System.out.println(firstNumber + " / " + secondNumber + " = " + result );
